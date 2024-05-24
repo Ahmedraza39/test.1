@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <from>
+        <div class="container">
+            <label>User Name:</label>
+            <input type="text"id="pass"><br><br>
+            <lebal>Password:</lebal>
+            <input type="password" id="us"><br><br>
+            <button type="submit" value="login" onclick="login()">login</button>
+            <lebal>
+            <input type="checkbox" name="remember"> Remember me
+            </lebal>
+        </div>
+    </from>
+    <script type="text/javascript">
+        function login(){
+            var username= document.getElementById('us').value;
+            var password= document.getElementById('pass').value;
+
+            if (username=="admin@gmail.com" && password=="ali"){
+                window.open("profile.html","_blank");
+            }
+            else if(username=="usman@gmail.com" && password=="123"){
+                window.open("profile.html","_blank");
+            }
+            else{
+                alert("login failed");
+            }
+        }
+    </script>
+</body>
+</html>
